@@ -5,4 +5,12 @@ $APPLICATION->SetPageProperty("title", "Отзывы");
 $APPLICATION->SetPageProperty("keywords", "Отзывы, компания, мебель");
 $APPLICATION->SetPageProperty("description", "Отзывы о компании");
 $APPLICATION->SetTitle("Отзывы");
-?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?>
+
+    <p>Заголовок - <?$APPLICATION->ShowTitle()?></p>
+    <p>Заголовок - <?$APPLICATION->ShowProperty("test")?></p>
+    <p>Заголовок - <?$APPLICATION->ShowProperty("title")?></p>
+    <p>Заголовок - <?$APPLICATION->ShowProperty("keywords")?></p>
+    <p>Заголовок - <?$APPLICATION->ShowProperty("description")?></p>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
