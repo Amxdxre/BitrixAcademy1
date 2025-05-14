@@ -13,4 +13,6 @@ $APPLICATION->SetTitle("Отзывы");
     <p>Заголовок - <?$APPLICATION->ShowProperty("keywords")?></p>
     <p>Заголовок - <?$APPLICATION->ShowProperty("description")?></p>
 
+    <?php $APPLICATION->SetPageProperty("test", "Значение 2");?>
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
