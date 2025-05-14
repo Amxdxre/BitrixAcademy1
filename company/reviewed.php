@@ -8,6 +8,7 @@ $APPLICATION->SetTitle("Отзывы");
 ?>
 
     <p>Заголовок - <?$APPLICATION->ShowTitle()?></p>
+    <p>Заголовок 2 - <?$APPLICATION->ShowTitle(false)?></p>
     <p>Заголовок - <?$APPLICATION->ShowProperty("test")?></p>
     <p>Заголовок - <?$APPLICATION->ShowProperty("title")?></p>
     <p>Заголовок - <?$APPLICATION->ShowProperty("keywords")?></p>
