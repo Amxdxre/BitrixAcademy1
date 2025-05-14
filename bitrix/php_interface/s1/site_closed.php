@@ -126,7 +126,6 @@
 <body>
 <div class="terminal">
     <div class="scanline"></div>
-    <img src="https://i.imgur.com/8QZQZ9Q.png" alt="Pip-Boy" class="pip-boy">
 
     <h1 class="glitch">Внимание!</h1>
 
