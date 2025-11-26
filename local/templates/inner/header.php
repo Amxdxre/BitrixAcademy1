@@ -7,10 +7,10 @@ IncludeTemplateLangFile(__FILE__);
 <head>
     <?$APPLICATION->ShowHead();?>
     <title><?$APPLICATION->ShowTitle()?></title>
-    <link rel="stylesheet" href="/bitrix/templates/.default/template_styles.css"/>
-    <link rel="shortcut icon" type="image/x-icon" href="/bitrix/templates/.default/favicon.ico">
-    <script type="text/javascript" src="/bitrix/templates/.default/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/bitrix/templates/.default/js/functions.js"></script>
+    <link rel="stylesheet" href="/local/templates/.default/template_styles.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/local/templates/.default/favicon.ico">
+    <script type="text/javascript" src="/local/templates/.default/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/local/templates/.default/js/functions.js"></script>
 
     <!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
 </head>
@@ -63,7 +63,7 @@ IncludeTemplateLangFile(__FILE__);
             </table>
             <div class="nv_topnav">
                 <ul>
-                    <li><a href=""   class="menu-img-fon"  style="background-image: url(/bitrix/templates/.default/images/nv_home.png);" ><span></span></a></li>
+                    <li><a href=""   class="menu-img-fon"  style="background-image: url(/local/templates/.default/images/nv_home.png);" ><span></span></a></li>
                     <li><a href=""><span>Компания</span></a>
                         <ul>
                             <li><a href="">Пункт 1</a></li>
