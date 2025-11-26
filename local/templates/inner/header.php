@@ -62,35 +62,39 @@ IncludeTemplateLangFile(__FILE__);
                 </tr>
             </table>
             <?$APPLICATION->IncludeComponent(
-                "bitrix:menu",
-                "top_multi",
-                [
-                    "ALLOW_MULTI_SELECT" => "N",
-                    "CHILD_MENU_TYPE" => "left",
-                    "DELAY" => "N",
-                    "MAX_LEVEL" => "2",
-                    "MENU_CACHE_GET_VARS" => "",
-                    "MENU_CACHE_TIME" => "3600",
-                    "MENU_CACHE_TYPE" => "N",
-                    "MENU_CACHE_USE_GROUPS" => "Y",
-                    "ROOT_MENU_TYPE" => "top",
-                    "USE_EXT" => "N",
-                    "COMPONENT_TEMPLATE" => "horizontal_multilevel"
-                ],
-                false
-            );?>
+	"bitrix:menu", 
+	"top_multi", 
+	[
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "2",
+		"MENU_CACHE_GET_VARS" => [
+		],
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "N",
+		"COMPONENT_TEMPLATE" => "top_multi"
+	],
+	false
+);?>
         </div>
     </div>
 
     <!--- // end header area --->
-    <div class="bc_breadcrumbs">
-        <ul>
-            <li><a href="">Каталог</a></li>
-            <li><a href="">Мебель</a></li>
-            <li><a href="">Выставки и события</a></li>
-        </ul>
-        <div class="clearboth"></div>
-    </div>
+    <?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	"nav", 
+	[
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "nav"
+	],
+	false
+);?>
     <div class="main_container page">
         <div class="mn_container">
             <div class="mn_content">
