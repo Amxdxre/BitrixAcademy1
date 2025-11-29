@@ -58,12 +58,14 @@ $arJSParams = array(
 ?><table align="center" class="bx_item_detail_rating">
 	<tr>
 		<td>
+			<?$this->SetViewTarget('CATALOG_VOTE_STARS');?>
 			<div class="bx_item_rating">
 				<div class="bx_stars_container">
 					<div id="<?=$arJSParams["starsId"]?>" class="bx_stars_bg"></div>
 					<div id="<?=$arJSParams["progressId"]?>" class="bx_stars_progress"></div>
 				</div>
 			</div>
+			<?$this->EndViewTarget();?>
 		</td>
 		<td>
 			<span id="<?=$arJSParams["ratingId"]?>" class="bx_stars_rating_votes">(0)</span>

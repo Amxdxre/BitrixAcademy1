@@ -38,7 +38,7 @@ IncludeTemplateLangFile(__FILE__);
             <div class="mn_content">
                 <div class="main_post">
                     <div class="main_title">
-                        <p class="title"><?$APPLICATION->ShowTitle(false)?></p>
+                        <p class="title"><?$APPLICATION->ShowTitle(false)?><?$APPLICATION->ShowViewContent('CATALOG_VOTE_STARS');?></p>
                         <span class="main_date"><?$APPLICATION->ShowViewContent('NEWS_ACTIVE_DATE');?></span>
                     </div>
                     <!-- workarea -->
