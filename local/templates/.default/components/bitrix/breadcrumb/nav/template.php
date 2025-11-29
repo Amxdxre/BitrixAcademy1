@@ -9,7 +9,7 @@ global $APPLICATION;
 
 //delayed function must return a string
 if(empty($arResult))
-	return "";
+    return "";
 
 $strReturn = '';
 
@@ -18,25 +18,25 @@ $strReturn .= '<div class="bc_breadcrumbs"><ul>';
 $itemSize = count($arResult);
 for($index = 0; $index < $itemSize; $index++)
 {
-	$title = htmlspecialcharsex($arResult[$index]["TITLE"]);
+    $title = htmlspecialcharsex($arResult[$index]["TITLE"]);
 
-	if($arResult[$index]["LINK"] <> "" && $index != $itemSize-1)
-	{
-		$strReturn .= '
+    if($arResult[$index]["LINK"] <> "" && $index != $itemSize-1)
+    {
+        $strReturn .= '
 			<li>
 				<a href="'.$arResult[$index]["LINK"].'" title="'.$title.'" itemprop="item">
 					<span itemprop="name">'.$title.'</span>
 				</a>
 				<meta itemprop="position" content="'.($index + 1).'" />
 			</li>';
-	}
-	else
-	{
-		$strReturn .= '
+    }
+    else
+    {
+        $strReturn .= '
 			<li>
 			<a><span>'.$title.'</span></a>
 			</li>';
-	}
+    }
 }
 
 $strReturn .= '</ul><div class="clearboth"></div></div></div>';
