@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 <div class="sb_action">
 	<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""/></a>
 	<h4>Акция</h4>
-	<h5><a>Мебельная полка всего за <?=$arItem["PROPERTIES"]["PRICE"]["VALUE"]?> Р</a></h5>
+	<h5><a><?=$arItem["NAME"]?> всего за <?=$arItem["PROPERTIES"]["PRICE"]["VALUE"]?> Р</a></h5>
 	<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="sb_action_more">Подробнее &rarr;</a>
 </div>
 <?endforeach;?>
