@@ -16,6 +16,10 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 
+?>
+	<div class="ps_content">
+<?php
+
 $ElementID = $APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
 	"",
@@ -71,7 +75,9 @@ $ElementID = $APPLICATION->IncludeComponent(
 	],
 	$component
 );?>
-<p><a href="<?=$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["news"]?>"><?=GetMessage("T_NEWS_DETAIL_BACK")?></a></p>
+	<a href="<?=$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["news"]?>" class="ps_backnewslist"><?=GetMessage("T_NEWS_DETAIL_BACK")?></a>
+	</div>
+	<p><a href=""></a></p>
 <?if($arParams["USE_RATING"]=="Y" && $ElementID):?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:iblock.vote",
