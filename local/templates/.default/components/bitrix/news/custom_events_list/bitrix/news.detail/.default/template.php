@@ -17,3 +17,7 @@ $this->setFrameMode(true);
 	<img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" align="left" alt=""/>
 <?endif?>
 <p><?echo $arResult["DETAIL_TEXT"];?></p>
+
+<?$this->SetViewTarget('NEWS_ACTIVE_DATE');?>
+<?=$arResult["DISPLAY_ACTIVE_FROM"]?>
+<?$this->EndViewTarget();?>

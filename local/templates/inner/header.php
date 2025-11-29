@@ -39,5 +39,6 @@ IncludeTemplateLangFile(__FILE__);
                 <div class="main_post">
                     <div class="main_title">
                         <p class="title"><?$APPLICATION->ShowTitle(false)?></p>
+                        <span class="main_date"><?$APPLICATION->ShowViewContent('NEWS_ACTIVE_DATE');?></span>
                     </div>
                     <!-- workarea -->
